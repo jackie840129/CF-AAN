@@ -13,7 +13,7 @@ This is the pytorch implementatin of Coarse-to-Fine Axial Attention Network **(C
 - We release the code and aligned dataset for our work.
 - We update the Readme related to our new dataset, and the others will be updated gradually.
 
-# Aligned dataset with our re-Detect and Link module
+## Aligned dataset with our re-Detect and Link module
 
 ### Download Link : 
 
@@ -25,12 +25,38 @@ The video tracklet will be re-Detected, linked (tracking) and padded to the orig
 <p align="left"><img src='imgs/DL.png' width="350pix"></p>
 
 ### Folder Structure
-
-# Coarse-to-Fine Axial Attention Network (CF-AAN)
+MARS dataset:
+```
+MARS-DL/
+|-- bbox_train/
+|-- bbox_test/
+|-- info/
+|-- |-- mask_info.csv (for DL mask)
+|-- |-- mask_info_test.csv  (for DL mask)
+|-- |-- clean_tracks_test_info.mat (for new evaluation protocol)
+|-- |-- .... (other original info files)
+```
+DukeV dataset:
+```
+DukeMTMC-VideoReID-DL/
+|-- train/
+|-- gallery/
+|-- query/
+|-- duke_mask_info.csv (for DL mask)
+|-- duke_mask_info_gallery.csv  (for DL mask)
+|-- duke_mask_info_query.csv  (for DL mask)
+```
+You can put this two folders under your root dataset directory.
+```
+path to your root dir/
+|-- MARS-DL/
+|-- DukeMTMC-VideoReID-DL/
+```
+## Coarse-to-Fine Axial Attention Network (CF-AAN)
 
 comming soon
 
-# New Evaluatoin Protocol
+## New Evaluatoin Protocol
 
 comming soon
 
