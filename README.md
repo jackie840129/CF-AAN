@@ -9,5 +9,12 @@ This is the pytorch implementatin of Coarse-to-Fine Axial Attention Network **(C
 
 # Aligned dataset with our re-Detect and Link module
 
-<p align="center"><img src='imgs/DL.png' width="300pix"> <img src='imgs/DL_2.png' width="300pix"></p>
+### Download Link : 
+
+- MARS (DL) : [[Google Drive]](https://drive.google.com/file/d/1adP39y7xoKYX8Z4lyBtZiDTg9kZyK1Cx/view?usp=sharing)
+- DukeMTMC-VideoReID (DL) : [[Google Drive]](https://drive.google.com/file/d/1JjYc1lMe3IpMlAf3otk_68H-YX84njMd/view?usp=sharing)
+
+### Results
+The video tracklet will be re-Detected, linked (tracking) and padded to the original image size, as follow.
+<p align="left"><img src='imgs/DL.png' width="350pix"></p>
 
