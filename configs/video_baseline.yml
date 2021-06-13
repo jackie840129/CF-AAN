@@ -1,0 +1,67 @@
+MODEL:
+  PRETRAIN_CHOICE: 'imagenet'
+  PRETRAIN_PATH: ''
+  NAME : 'resnet50'
+  METRIC_LOSS_TYPE: 'triplet'
+  IF_LABELSMOOTH: 'no'
+  IF_WITH_CENTER: 'no'
+  SETTING : 'video'
+  TEMP : 'avg'
+
+INPUT:
+  SIZE_TRAIN: [256, 128]
+  SIZE_TEST: [256, 128]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing
+  PADDING: 10
+  #video reid
+  IF_FLIP : False
+  IF_CROP : False
+  IF_RE : False
+  MIN_SEQ_LEN : 0
+  SEQ_LEN : 6
+  SAMPLE : 'RRS'
+
+DATASETS:
+  NAMES: ('mars',)
+
+DATALOADER:
+  SAMPLER: 'softmax_triplet'
+  NUM_INSTANCE: 4
+  NUM_WORKERS: 8
+
+SOLVER:
+  OPTIMIZER_NAME: 'Adam'
+  MAX_EPOCHS: 220
+  BASE_LR: 0.0001
+
+  MARGIN : 0.3
+  SOFT_MARGIN : True
+
+  CENTER_LR: 0.5
+  CENTER_LOSS_WEIGHT: 0.0005
+
+  BIAS_LR_FACTOR: 1
+  WEIGHT_DECAY: 5e-5
+  WEIGHT_DECAY_BIAS: 5e-5
+  IMS_PER_BATCH: 32
+
+  STEPS: [50, 100, 150, 200]
+  GAMMA: 0.1
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 10
+  WARMUP_METHOD: 'linear'
+
+  EVAL_PERIOD: 10
+
+TEST:
+  IMS_PER_BATCH: 32
+  RE_RANKING: 'no'
+  WEIGHT: "path"
+  NECK_FEAT: 'after'
+  FEAT_NORM: 'yes'
+  TEST_MODE: 'test'
+
+
+
