@@ -22,7 +22,7 @@ This is the pytorch implementatin of Coarse-to-Fine Axial Attention Network **(C
 
 ### Results
 The video tracklet will be re-Detected, linked (tracking) and padded to the original image size, as follow.
-<p align="left"><img src='imgs/DL.png' width="350pix"></p>
+<p align="left"><img src='imgs/DL.png' width="310pix"></p>
 
 ### Folder Structure
 MARS dataset:
