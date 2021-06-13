@@ -7,6 +7,12 @@
 This is the pytorch implementatin of Coarse-to-Fine Axial Attention Network **(CF-AAN)** for video-based person Re-ID. 
 <br/>It achieves **91.3%** in rank-1 accuracy and **86.5%** in mAP on our aligned MARS dataset.
 
+## News
+
+**`2021-06-13`**: 
+- We release the code and aligned dataset for our work.
+- We update the Readme related to our new dataset, and the others will be updated gradually.
+
 # Aligned dataset with our re-Detect and Link module
 
 ### Download Link : 
@@ -18,3 +24,34 @@ This is the pytorch implementatin of Coarse-to-Fine Axial Attention Network **(C
 The video tracklet will be re-Detected, linked (tracking) and padded to the original image size, as follow.
 <p align="left"><img src='imgs/DL.png' width="350pix"></p>
 
+### Folder Structure
+
+# Coarse-to-Fine Axial Attention Network (CF-AAN)
+
+comming soon
+
+# New Evaluatoin Protocol
+
+comming soon
+
+## Citation
+```
+@InProceedings{Liu_2021_CVPR,
+    author    = {Liu, Chih-Ting and Chen, Jun-Cheng and Chen, Chu-Song and Chien, Shao-Yi},
+    title     = {Video-Based Person Re-Identification Without Bells and Whistles},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2021},
+    pages     = {1491-1500}
+}
+```
+## Reference
+
+The structure of our code are based on [reid-strong-baseline](https://github.com/michuanhaohao/reid-strong-baseline).  
+Some codes of our CF-AAN are based on [axial-deeplab](https://github.com/csrhddlam/axial-deeplab)
+
+## Contact
+
+[Chih-Ting Liu](https://jackie840129.github.io/), [Media IC & System Lab](https://github.com/mediaic), National Taiwan University
+
+E-mail : jackieliu@media.ee.ntu.edu.tw
