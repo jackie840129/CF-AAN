@@ -12,9 +12,10 @@ This is the pytorch implementatin of Coarse-to-Fine Axial Attention Network **(C
 **`2021-06-13`**: 
 - We release the code and aligned dataset for our work.
 - We update the Readme related to our new dataset, and the others will be updated gradually.
+
 **`2021-06-18`**:
 - We update the description for training and testing CF-AAN.
-- 
+
 ## Aligned dataset with our re-Detect and Link module
 
 ### Download Link : 
