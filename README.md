@@ -1,6 +1,6 @@
 # Video-based Person Re-identification without Bells and Whistles
 
-[[Paper]](https://openaccess.thecvf.com/content/CVPR2021W/AMFG/papers/Liu_Video-Based_Person_Re-Identification_Without_Bells_and_Whistles_CVPRW_2021_paper.pdf) [[arXiv]](https://arxiv.org/pdf/2105.10678.pdf) [[video]]()
+[[Paper]](http://media.ee.ntu.edu.tw/research/CFAAN/paper/CVPRw21_VideoReID.pdf) [[arXiv]](https://arxiv.org/pdf/2105.10678.pdf) [[video]](https://youtu.be/RNssJNmq504)
 
 [Chih-Ting Liu](https://jackie840129.github.io/), [Jun-Cheng Chen](https://www.citi.sinica.edu.tw/pages/pullpull/contact_en.html), [Chu-Song Chen](https://imp.iis.sinica.edu.tw/) and [Shao-Yi Chien](http://www.ee.ntu.edu.tw/profile?id=101),<br/>Analysis & Modeling of Faces & Gestures Workshop jointly with IEEE Conference on Computer Vision and Pattern Recognition (**CVPRw**), 2021
 
@@ -54,7 +54,10 @@ path to your root dir/
 ```
 ## Coarse-to-Fine Axial Attention Network (CF-AAN)
 
-comming soon
+### Requirement
+### Training 
+### Testing
+
 
 ## New Evaluatoin Protocol
 
