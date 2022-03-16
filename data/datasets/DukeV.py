@@ -12,8 +12,7 @@ import numpy as np
 
 
 class DukeV(BaseVideoDataset):
-    # dataset_dir = 'DukeMTMC-VideoReID'
-    dataset_dir = 'DukeMTMC-VideoReID-DL'
+    dataset_dir = 'DukeMTMC-VideoReID'
 
     def __init__(self, root='/home/mediax/Dataset', verbose=True, min_seq_len =0,info_dir='./DukeV_info',new_eval=False):
         super(DukeV, self).__init__()

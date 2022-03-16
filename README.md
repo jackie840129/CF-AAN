@@ -21,7 +21,7 @@ This is the pytorch implementatin of Coarse-to-Fine Axial Attention Network **(C
 ### Download Link : 
 
 - MARS (DL) : [[Google Drive]](https://drive.google.com/file/d/1adP39y7xoKYX8Z4lyBtZiDTg9kZyK1Cx/view?usp=sharing)
-- DukeMTMC-VideoReID (DL) : [[Google Drive]](https://drive.google.com/file/d/1JjYc1lMe3IpMlAf3otk_68H-YX84njMd/view?usp=sharing)
+- For DukeV, we didn't perform DL on DukeMTMC-VideoReID because the bounding boxes are greound truth annotations.
 
 ### Results
 The video tracklet will be re-Detected, linked (tracking) and padded to the original image size, as follow.
@@ -41,19 +41,16 @@ MARS-DL/
 ```
 DukeV dataset:
 ```
-DukeMTMC-VideoReID-DL/
+DukeMTMC-VideoReID/
 |-- train/
 |-- gallery/
 |-- query/
-|-- duke_mask_info.csv (for DL mask)
-|-- duke_mask_info_gallery.csv  (for DL mask)
-|-- duke_mask_info_query.csv  (for DL mask)
 ```
 You can put this two folders under your root dataset directory.
 ```
 path to your root dir/
 |-- MARS-DL/
-|-- DukeMTMC-VideoReID-DL/
+|-- DukeMTMC-VideoReID/
 ```
 ## Coarse-to-Fine Axial Attention Network (CF-AAN)
 
@@ -80,7 +77,7 @@ python3 tools/train.py --config_file='configs/video_baseline.yml' MODEL.DEVICE_I
 You can alter the argument in `scripts/NL_M.sh` & `scripts/baseline_M.sh` and run it with:
 
 `sh scripts/AA_M.sh` & `sh scripts/baseline_M.sh`
-#### Train models on DukeMTMC-VideoReID-DL
+#### Train models on DukeMTMC-VideoReID
 You can use the scripts `scripts/AA_D.sh`, `scripts/NL_D.sh`, & `scripts/baseline_D.sh`
 
 #### Notes
@@ -91,7 +88,6 @@ class MARS(BaseVideoDataset):
     # dataset_dir = 'MARS-DL'
     info_dir = 'info
 ```
-same as the DukeV dataset.
 
 ### Testing
 You can alter the argument in `scripts/test_M.sh` and run it with:
